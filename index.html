@@ -1,0 +1,459 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Server - Enhancing Education with Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFD700; /* Yellow */
+            color: #111111; /* Black text */
+            overflow-x: hidden;
+        }
+        .bg-om-yellow { background-color: #FFD700 !important; }
+        .text-om-yellow { color: #FFD700 !important; }
+        .bg-om-white { background-color: #fff !important; }
+        .text-om-black { color: #111111 !important; }
+        .section-card {
+            background-color: #fff !important;
+            color: #111111 !important;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
+        .section-card-yellow {
+            background-color: #FFD700 !important;
+            color: #111111 !important;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .navbar-link {
+            color: #111111 !important;
+            background: transparent !important;
+            transition: background 0.2s, color 0.2s;
+        }
+        .navbar-link-active, .navbar-link:hover {
+            color: #FFD700 !important;
+            background: #fff !important;
+        }
+        .btn-yellow {
+            background-color: #FFD700;
+            color: #111111;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-yellow:hover {
+            background-color: #fff;
+            color: #FFD700;
+        }
+        .btn-black {
+            background-color: #111111;
+            color: #FFD700;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-black:hover {
+            background-color: #FFD700;
+            color: #111111;
+        }
+        .footer-icon {
+            color: #FFD700 !important;
+        }
+        .partner-logo-container {
+            background-color: #fff !important;
+        }
+        .partner-name-overlay {
+            background-color: rgba(255, 215, 0, 0.95) !important;
+            color: #111111 !important;
+        }
+        .bg-gray-50, .bg-gray-100, .bg-white {
+            background-color: #fff !important;
+            color: #111111 !important;
+        }
+        .text-gray-700, .text-gray-800, .text-gray-400, .text-gray-500 {
+            color: #111111 !important;
+        }
+        .rounded-xl, .rounded-lg {
+            border-radius: 1rem !important;
+        }
+    </style>
+</head>
+<body class="bg-om-yellow text-om-black">
+
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-between">
+            <a href="index.html" class="flex items-center mb-4 md:mb-0">
+                <img src="./assets/logo pics/Om Server Logo in Black color.png" alt="Logo" class="h-24 w-24 object-contain">
+            </a>
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-col md:flex-row space-y-1 md:space-y-0 md:space-x-4 text-base font-semibold justify-center md:justify-end items-center">
+                    <li class="flex items-center">
+                        <a href="./index.html#about" class="navbar-link rounded-lg px-4 py-2 flex items-center">About Us</a>
+                    </li>
+                    <li class="flex items-center"><a href="index.html#programs" class="navbar-link rounded-lg px-4 py-2 flex items-center">Our Programs</a></li>
+                    <li class="flex items-center"><a href="index.html#founders" class="navbar-link rounded-lg px-4 py-2 flex items-center">Our Team</a></li>
+                    <li class="flex items-center"><a href="index.html#impact" class="navbar-link rounded-lg px-4 py-2 flex items-center">Impact</a></li>
+                    <li class="flex items-center"><a href="our-product.html" class="navbar-link rounded-lg px-4 py-2 flex items-center">Our Product</a></li>
+                    <li class="flex items-center"><a href="index.html#partners" class="navbar-link rounded-lg px-4 py-2 flex items-center">Partners</a></li>
+                    <li class="flex items-center"><a href="index.html#contact" class="navbar-link rounded-lg px-4 py-2 flex items-center">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-om-yellow text-om-black py-20 px-6 md:px-12 text-center rounded-b-3xl shadow-xl">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-pulse">Om Server Private Limited</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Creating Technology For Scaling Your Impact</p>
+            <a href="./gallery.html" class="inline-block mt-6 btn-black text-2xl font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">View Our Photos</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 px-6 md:px-12 section-card shadow-md m-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-om-yellow mb-8">About Om Server</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-8">Om Server is a Private Limited company committed to bridging the educational gap in underserved communities. We believe that access to quality education, especially through technological advancements, is a fundamental right. Our initiatives focus on providing resources, training, and infrastructure to enhance learning experiences in government schools and remote tribal regions.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="p-6 rounded-lg shadow-lg section-card-yellow transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+                    <p>A future where every child, regardless of their background or location, has access to empowering education and digital literacy.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg section-card-yellow transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                    <p>To implement sustainable technology solutions and innovative teaching methodologies in government and tribal schools.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg section-card-yellow transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+                    <p>Integrity, Innovation, Inclusivity, and creativity are at the core of everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="py-16 px-6 md:px-12 section-card shadow-md m-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-om-yellow mb-8">Our Programs</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-12">We design and implement comprehensive programs tailored to the unique needs of the communities we serve.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="section-card-yellow p-8 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-3xl font-semibold mb-4">Tech-Enabled Classrooms</h3>
+                    <p class="text-lg mb-4">We equip government schools with computers and interactive smart boards to create dynamic learning environments.</p>
+                    <ul class="list-disc list-inside text-left">
+                        <li>Digital literacy workshops for students</li>
+                        <li>E-learning content integration</li>
+                        <li>Teacher training on digital boards</li>
+                    </ul>
+                </div>
+                <div class="section-card-yellow p-8 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-3xl font-semibold mb-4">Tribal Education Enhancement</h3>
+                    <p class="text-lg mb-4">Our specialized programs for tribal areas focus on culturally relevant education combined with modern technological exposure.</p>
+                    <ul class="list-disc list-inside text-left">
+                        <li>Promoting creativity and reusing of items for science</li>
+                        <li>Vocational training with tech skills</li>
+                        <li>Community-based learning centers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Founder Section -->
+<section id="founders" class="py-16 px-6 md:px-12 section-card shadow-md m-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-om-yellow mb-12">Meet Our Founder</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center overflow-hidden w-40 h-40 md:w-64 md:h-64 relative" style="aspect-ratio:1/1;">
+                <img src="./assets//Arvind Thanvi photo.jpg" alt="Founder's Photo" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                    <h3 class="text-xl font-bold mb-1">Mr. Arvind Thanvi</h3>
+                    <p class="text-xs font-medium">Founder</p>
+                </div>
+            </div>
+            <div class="text-left max-w-2xl">
+                <p class="text-lg leading-relaxed mb-4">
+                    Mr. Arvind Thanvi is the visionary behind Om Server, driven by a profound belief in the transformative power of education and technology. With years of experience in social development and a passion for empowering underserved communities, he founded Om Server to ensure every child has the opportunity to thrive in the digital age.
+                    <br>
+                    Graduate from IIT Kharagpur, Arvind brings with him 28 years of vast experience in IT Services and Consultancy space with global industry leader firms like Accenture, Goldman Sachs, Barclays etc. His last stint with Accenture lasted for 10 years and at the time of leaving Accenture, he was account director and delivery unit lead for leading UK based banks emerging markets & new business portfolio. He is an educationist by passion as well as an eminent speaker and startup mentor with various Incubation Centers.
+                </p>
+                <a href="https://www.linkedin.com/in/arvindthanvi" target="_blank" class="btn-yellow py-2 px-6 rounded-full font-semibold shadow hover:bg-om-yellow hover:text-om-black transition-colors duration-300 inline-flex items-center">
+                    <i class="fab fa-linkedin-in mr-2"></i>LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Director Section -->
+<section id="director" class="py-16 px-6 md:px-12 section-card shadow-md m-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-om-yellow mb-12">Meet Our Director</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center overflow-hidden w-40 h-40 md:w-64 md:h-64 relative" style="aspect-ratio:1/1;">
+                <img src="./assets/logo pics/team members photo/moms photo.jpg" alt="Director's Photo" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                    <h3 class="text-xl font-bold mb-1">Mrs. Vanita Thanvi</h3>
+                    <p class="text-xs font-medium">Director</p>
+                </div>
+            </div>
+            <div class="text-left max-w-2xl">
+                <p class="text-lg leading-relaxed mb-4">
+                    Mrs.Vanita Thanvi is a key leader at Om Server, bringing a wealth of experience and dedication to the mission of transforming education through technology. Their vision and management skills help drive the organization forward, ensuring impactful outcomes for students and communities.
+                    <br>
+                    The Director oversees strategic initiatives, partnerships, and daily operations, making sure Om Server continues to innovate and expand its reach.
+                </p>
+                <a href="mailto:vanita.thanvi@moinee.org" class="btn-yellow py-2 px-6 rounded-full font-semibold shadow hover:bg-om-yellow hover:text-om-black transition-colors duration-300 inline-flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="team" class="py-16 px-6 md:px-12 section-card shadow-md m-8">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-om-yellow mb-12">Meet Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-center">
+            <!-- Team Member Example -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/gaurav.jpeg" alt="Team Member 2"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Gaurav Sharma</h3>
+                        <p class="text-xs font-medium">Implementation Lead</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 1 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/pawan.jpg" alt="Team Member 1"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Pawan Kumar Thanvi</h3>
+                        <p class="text-xs font-medium">Operations Manager</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/meghans photo.jpg" alt="Team Member 3"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Meghna Thanvi</h3>
+                        <p class="text-xs font-medium">Product Manager</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/manish.jpg" alt="Team Member 4"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Manish Sharma</h3>
+                        <p class="text-xs font-medium">Service Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/ankit.jpg" alt="Team Member 5"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Ankit Khare</h3>
+                        <p class="text-xs font-medium">Software Programmer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 5 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/khel.PNG" alt="Team Member 6"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Khel Shanker Vyas</h3>
+                        <p class="text-xs font-medium">Jr. Software Programmer</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 6 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/Ishu.png" alt="Team Member 7"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Ishu Sharma</h3>
+                        <p class="text-xs font-medium">Technical Assistant</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 7 -->
+            <div class="bg-om-white rounded-lg shadow-lg p-0 flex flex-col items-center hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <div class="relative w-full" style="aspect-ratio: 1 / 1;">
+                    <img src="./assets/logo pics/team members photo/Ganesh.jpg" alt="Team Member 8"
+                        class="object-cover w-full h-full">
+                    <div class="absolute bottom-0 left-0 w-full bg-om-yellow bg-opacity-95 px-4 py-3 text-om-black text-center">
+                        <h3 class="text-lg font-bold mb-1">Ganesh Sani</h3>
+                        <p class="text-xs font-medium">Jr. Technical Assistant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="impact" class="py-16 px-6 md:px-12 section-card-yellow shadow-md m-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-om-black mb-8">Our Impact So Far</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-12 text-om-black">See the difference your support makes. We are proud of the progress we've achieved together.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-lg bg-om-white text-om-black shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-extrabold mb-2">1 Lakh+</div>
+                    <div class="text-xl font-semibold">Students & Teachers Benefited</div>
+                </div>
+                <div class="p-6 rounded-lg bg-om-white text-om-black shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-extrabold mb-2">9</div>
+                    <div class="text-xl font-semibold">Vernacular Languages Supported</div>
+                </div>
+                <div class="p-6 rounded-lg bg-om-white text-om-black shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-extrabold mb-2">40+</div>
+                    <div class="text-xl font-semibold">Regional Villages Reached</div>
+                </div>
+                <div class="p-6 rounded-lg bg-om-white text-om-black shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-extrabold mb-2">2000+</div>
+                    <div class="text-xl font-semibold">Schools Connected</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 px-6 md:px-12 section-card-yellow shadow-md m-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="md:w-1/2 text-left mb-8 md:mb-0">
+                <h2 class="text-4xl font-bold text-om-black mb-4">Our Product Features</h2>
+                <p class="text-lg mb-4 text-om-black">
+                    Discover the innovative features of our product that make learning engaging and effective. Designed for modern classrooms and remote education, our solution brings technology and creativity together.
+                </p>
+                <ul class="list-disc list-inside text-om-black">
+                    <li>Interactive digital content</li>
+                    <li>Easy-to-use interface for teachers and students</li>
+                    <li>Offline access and robust hardware</li>
+                    <li>Customizable for different curricula</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./assets/product-feature.jpg" alt="Product Feature" class="w-full max-w-md rounded-lg shadow-lg object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="case-study" class="py-16 px-6 md:px-12 section-card-yellow shadow-md m-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-om-black mb-8">Case Study</h2>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-12 text-om-black">
+                Discover how Om Server's technology-driven approach transformed a rural government school. Through our intervention, students gained access to digital resources, teachers received hands-on training, and the entire community witnessed a boost in educational outcomes.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="md:w-1/2 text-left mb-8 md:mb-0">
+                    <h3 class="text-2xl font-semibold mb-4 text-om-black">Govt. School, Example Village</h3>
+                    <ul class="list-disc list-inside text-om-black">
+                        <li>Smart classrooms set up with tablets and e-learning content</li>
+                        <li>Teacher workshops on digital teaching methods</li>
+                        <li>Attendance and engagement increased by 40%</li>
+                        <li>Community involvement in school activities grew significantly</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./assets/logo pics/mao for om server.PNG" alt="Case Study" class="w-full max-w-md rounded-lg shadow-lg object-cover bg-om-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="py-16 px-6 md:px-12 section-card shadow-md m-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-om-yellow mb-12">Our Valued Partners</h2>
+            <p class="text-lg leading-relaxed text-om-black max-w-4xl mx-auto mb-12">We are grateful for the support and collaboration of our partners who share our commitment to educational equity. Together, we amplify our impact and reach more communities.</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-center">
+                <!-- Partner logos here -->
+                 <div class="partner-logo-container">
+                    <img src="./assets/logo pics/tata logo.jpg" alt="Partner 1 Logo">
+                    <div class="partner-name-overlay">Tata Motors</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/vodafone idea new logo.avif" alt="Partner 2 Logo">
+                    <div class="partner-name-overlay">Vodafone Idea Limited</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/hdfc bank logo.png" alt="Partner 3 Logo">
+                    <div class="partner-name-overlay">HDFC Bank</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/41 india logo.png" alt="Partner 4 Logo">
+                    <div class="partner-name-overlay">41 Clubs of India</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/wns care foundation logo.png" alt="Partner 5 Logo">
+                    <div class="partner-name-overlay">WNS Cares Foundation</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/rotary club logo.png" alt="Partner 6 Logo">
+                    <div class="partner-name-overlay">Rotary Club</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/wheels global foundation logo.webp" alt="Partner 7 Logo">
+                    <div class="partner-name-overlay">Wheels Global Foundation</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/urmul trust.jpg" alt="Partner 8 Logo">
+                    <div class="partner-name-overlay">Urmul Trust</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/itc logo.png" alt="Partner 9 Logo">
+                    <div class="partner-name-overlay">ITC</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/baf logo.jpg" alt="Partner 10 Logo">
+                    <div class="partner-name-overlay">Bharti Airtel Foundation</div>
+                </div>
+                <div class="partner-logo-container">
+                    <img src="./assets/logo pics/hg foundation logo.jpg" alt="Partner 11 Logo">
+                    <div class="partner-name-overlay">HG Foundation</div>
+                </div>
+                <!-- ... -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-white text-om-yellow py-10 px-6 md:px-12 rounded-t-3xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold text-om-yellow mb-2">Om Server</h3>
+                <p class="text-om-black">Enhancing Education Through Technology</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-semibold text-om-yellow mb-3">Contact Us</h4>
+                <p class="text-om-black">Email: siab@omserver.org</p>
+                <p class="text-om-black">Phone: +91 9982600155</p>
+                <p class="text-om-black">Address: Om Server Pvt Ltd, 1-KA-17, Shastri Nagar, Jaipur, India - 302016</p>
+                <a href="https://maps.google.com/?q=Om+Server+Pvt+Ltd,+1-KA-17,+Shastri+Nagar,+Jaipur,+India+-+302016" target="_blank" class="text-om-black hover:text-om-yellow transition-colors duration-300" title="Find us on Google Maps">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                </a>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold text-om-yellow mb-3">Follow Us</h4>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://www.facebook.com/share/1C23bacq2R/" class="text-om-black hover:text-om-yellow transition-colors duration-300"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.instagram.com/school.in.a.box?igsh=MWV2bnhub3QxeDB4NA==" class="text-om-black hover:text-om-yellow transition-colors duration-300"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/posts/schoolinabox_educationforall-qualityeducation-learningbydoing-activity-7273776670514278400-Q5Ey" class="text-om-black hover:text-om-yellow transition-colors duration-300"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-om-black mt-8 pt-6 border-t border-om-yellow">
+            &copy; 2025 Om Server. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
