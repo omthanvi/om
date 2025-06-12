@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,3 +201,207 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Server - Photo Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+            overflow-x: hidden;
+        }
+        /* Custom styles for engaging colors */
+        .bg-primary-yellow {
+            background-color: #FFD700; /* Gold/Yellow */
+        }
+        .text-primary-yellow {
+            color: #FFD700;
+        }
+        .bg-primary-blue {
+            background-color: #4169E1; /* Royal Blue */
+        }
+        .text-primary-blue {
+            color: #4169E1;
+        }
+        .btn-yellow {
+            background-color: #FFD700;
+            color: #4169E1;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-yellow:hover {
+            background-color: #e6c200;
+            color: #ffffff;
+        }
+        .btn-blue {
+            background-color: #4169E1;
+            color: #FFD700;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn-blue:hover {
+            background-color: #3558bd;
+            color: #ffffff;
+        }
+         
+        /* Photo Gallery Hover Effect */
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem; /* rounded-lg */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            transition: transform 0.3s ease;
+        }
+        .photo-card:hover {
+            transform: scale(1.05);
+        }
+        .photo-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+            text-align: center;
+        }
+        .photo-card:hover .photo-card-overlay {
+            opacity: 1;
+        }
+        .photo-card-overlay h3 {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-primary-blue shadow-lg py-4 px-6 md:px-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center h-[50px]">
+            <a href="index.html" class="flex items-center space-x-2 text-3xl font-bold text-primary-yellow rounded-lg p-2 transition-transform duration-300 hover:scale-105">
+                <img src="./assets/logo.png" alt="" class="h-40 w-40 object-contain">
+                
+            </a>
+            <nav>
+    <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg font-semibold justify-center">
+        <li><a href="./index.html#about" class="navbar-link navbar-link-active rounded-md px-3 py-1">About Us</a></li>
+        <li><a href="index.html#programs" class="navbar-link rounded-md px-3 py-1">Our Programs</a></li>
+        <li><a href="index.html#founders" class="navbar-link rounded-md px-3 py-1">Our Founder and Team</a></li>
+        <li><a href="index.html#impact" class="navbar-link rounded-md px-3 py-1">Impact</a></li>
+        <!-- Removed Gallery Button -->
+        <li><a href="our-product.html" class="navbar-link rounded-md px-3 py-1">Our Product</a></li>
+        <li><a href="index.html#partners" class="navbar-link rounded-md px-3 py-1">Partners</a></li>
+        <li><a href="index.html#contact" class="navbar-link rounded-md px-3 py-1">Contact</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <section id="gallery" class="py-16 px-6 md:px-12 bg-gray-100 rounded-xl shadow-md m-8">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold text-primary-blue mb-8">Our Photos in Action</h1>
+            <p class="text-lg leading-relaxed max-w-4xl mx-auto mb-12">Witness the impact of technology in education through our photo gallery. Each image tells a story of learning and growth.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="photo-card">
+                    <img src="./assets/485361859_9641362695921746_4002631216178134862_n.jpg" alt="Student learning with tablet" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Digital Literacy Class</h3>
+                        <p class="text-sm">Students using computers in govt. school connected with our product, School-In-A-Box which help them learn their study containt in a fun way and increases their imagenation power </p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/20240805_125806pmByGPSMapCamera.jpg" alt="Teacher training session" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Teacher Empowerment</h3>
+                        <p class="text-sm">Teachers of government school are being taught to use smart boards and Om server to maximise the potential of our technology so it can change the life of millions of children and give them an opportunity to get quality education .</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/logo pics/team members photo/CLC.jpg" alt="Community learning center" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Community Learning Hub</h3>
+                        <p class="text-sm">A vibrant community center providing access to technology where kids have access to our product and studies in a very fun and eazy way.</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/480765629_9503613239696693_4742382459908654239_n.jpg" alt="Outdoor class with mobile unit" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Our team in action</h3>
+                        <p class="text-sm">Our Team members spreading information about School-In-A-Box in remote areas.</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/IMG20240109142054.jpg" alt="Happy kids learning" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Engagment shown by children</h3>
+                        <p class="text-sm">Children's excitement as they explore digital learning and love our creative activities which helps their imagination power increase and teaches them how to answer a situation at the instance with our prompt card activity.</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/464550160_8556018264476630_5107045001059383336_n.jpg" alt="Group study with tech" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Collaborative Learning</h3>
+                        <p class="text-sm">Students working together on a tech-based project which helps them build team leardership skills and teaches them team work.</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/485807446_9654814991243183_4743657162436141806_n.jpg" alt="Digital Classroom" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Computer lab's Setup</h3>
+                        <p class="text-sm">Our fully equipped digital classroom in action.</p>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="./assets/487138246_9685647734826575_5481758023367406152_n.jpg" alt="Vocational Training" class="w-full h-48 object-cover rounded-lg">
+                    <div class="photo-card-overlay">
+                        <h3>Skill Development</h3>
+                        <p class="text-sm">Children from schools gaining vocational tech skills and becoming ready for the future challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10 px-6 md:px-12 rounded-t-3xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-2xl font-bold text-primary-yellow mb-2">Om Server</h3>
+                <p class="text-gray-400">Enhancing Education Through Technology</p>
+            </div>
+            <div class="mb-6 md:mb-0">
+                <h4 class="text-xl font-semibold text-primary-yellow mb-3">Contact Us</h4>
+                <p class="text-gray-400">Email: siab@omserver.org</p>
+                <p class="text-gray-400">Phone: +91 9982600155</p>
+                <p class="text-gray-400">Address: Om Server Pvt Ltd, 1-KA-17, Shastri Nagar, Jaipur, India - 302016</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold text-primary-yellow mb-3">Follow Us</h4>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://www.facebook.com/share/1C23bacq2R/" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.instagram.com/school.in.a.box?igsh=MWV2bnhub3QxeDB4NA==" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/posts/schoolinabox_educationforall-qualityeducation-learningbydoing-activity-7273776670514278400-Q5Ey" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                     <a href="https://maps.google.com/?q=Om+Server+Pvt+Ltd,+1-KA-17,+Shastri+Nagar,+Jaipur,+India+-+302016" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300" title="Find us on Google Maps">
+        <i class="fas fa-map-marker-alt fa-2x"></i></a.
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-8 pt-6 border-t border-gray-700">
+            &copy; 2025 Om Server. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
+>>>>>>> 0e28bc676b7b55cbc34c81193cf5e9b11dce7330
