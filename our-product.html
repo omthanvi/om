@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Product - Om Server</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Om Server theme */
+        .bg-om-yellow { background-color: #FFD700; /* Gold/Amber */ }
+        .text-om-black { color: #2C3E50; /* Dark Slate Grey */ }
+        .border-om-yellow { border-color: #FFD700; }
+        .hover\:text-om-yellow:hover { color: #FFD700; }
+        .hover\:bg-om-yellow:hover { background-color: #FFD700; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+    <!-- Optional: Add Inter font if needed via Google Fonts or similar -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-om-yellow text-om-black min-h-screen flex flex-col font-inter">
+
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-between">
+            <a href="index.html" class="flex items-center mb-4 md:mb-0">
+                <img src="./assets/logo pics/Om Server Logo in Black color.png" alt="Logo" class="h-24 w-24 object-contain">
+            </a>
+            <!-- Nav right -->
+            <nav>
+                <ul class="flex flex-col md:flex-row gap-2 md:gap-6 text-base font-semibold items-center">
+                    <li><a href="./index.html#about" class="hover:bg-om-yellow hover:text-om-black px-3 py-1 rounded transition">About Us</a></li>
+                    <li><a href="index.html#programs" class="hover:bg-om-yellow hover:text-om-black px-3 py-1 rounded transition">Our Programs</a></li>
+                    <li><a href="index.html#founders" class="hover:bg-om-yellow hover:text-om-black px-3 py-1 rounded transition">Our Team</a></li>
+                    <li><a href="index.html#impact" class="hover:bg-om-yellow hover:text-om-black px-3 py-1 rounded transition">Impact</a></li>
+                   <li><a href="our-product.html" class="bg-om-yellow text-om-black px-3 py-1 rounded font-bold transition">Our Product</a></li>
+                    <li><a href="index.html#partners" class="hover:bg-om-yellow hover:text-om-black px-3 py-1 rounded transition">Partners</a></li>
+                    <li><a href="index.html#contact" class="hover:bg-om-yellow hover:text-om-black px-3 py-1 rounded transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Gallery Section -->
+    <section class="bg-om-yellow py-16 px-4 md:px-0 flex-grow">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-10 text-om-black">Product Gallery</h2>
+
+            <!-- Offline Smart Knowledge System Section -->
+            <h3 class="text-3xl font-bold text-center text-om-black mb-8 mt-12">Offline Smart Knowledge System</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product Card: Offline Content Library -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/DSC07396.jpg" alt="Offline Content Library" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Offline Content Library</h3>
+                        <p class="mb-4 flex-grow">A library of digital books, videos, and quizzes accessible without internet.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+                <!-- Product Card: Teacher Resource Hub -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/school-in-a-box (mini version).jpeg" alt="Teacher Resource Hub" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Teacher Resource Hub</h3>
+                        <p class="mb-4 flex-grow">A hub for teachers to access lesson plans, training modules, and teaching aids.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+                <!-- Product Card: Community Wi-Fi Hub -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/school-in-a-box n1 version.jpg" alt="Community Wi-Fi Hub" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Community Wi-Fi Hub</h3>
+                        <p class="mb-4 flex-grow">A device to provide safe, filtered Wi-Fi access for students and teachers in the community.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+                <!-- New Product Card: Classroom Learning Station -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/School-in-box (A1) version.jpg" alt="Classroom Learning Station" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Classroom Learning Station</h3>
+                        <p class="mb-4 flex-grow">An integrated station with offline resources, interactive tools, and a centralized display for group learning.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIY Kits Section -->
+            <h3 class="text-3xl font-bold text-center text-om-black mb-8 mt-16">DIY Kits</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product Card: Digital Learning Kit (Moved) -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/Math GPA Kit L1..jpg" alt="Digital Learning Kit" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Digital Learning Kit</h3>
+                        <p class="mb-4 flex-grow">A portable, plug-and-play kit with preloaded educational content for schools with limited internet access.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+                <!-- Product Card: Solar-Powered Server (Moved) -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/story making kit.jpg" alt="Solar-Powered Server" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Solar-Powered Server</h3>
+                        <p class="mb-4 flex-grow">A server powered by solar energy, perfect for off-grid schools and rural communities.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+                <!-- Product Card: Interactive Whiteboard (Moved) -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="product photos/IMG_20230609_165935.jpg" alt="Interactive Whiteboard" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Interactive Whiteboard</h3>
+                        <p class="mb-4 flex-grow">A digital whiteboard for interactive classroom sessions and collaborative learning.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+                <!-- Product Card: Student Tablet (Moved) -->
+                <div class="bg-white text-om-black rounded-xl shadow-xl overflow-hidden flex flex-col">
+                    <img src="c:\Users\Spidey Om\Downloads\Math GPA Kit L2.jpg" alt="Student Tablet" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold mb-2">Student Tablet</h3>
+                        <p class="mb-4 flex-grow">Affordable tablets for students, preloaded with curriculum and learning resources.</p>
+                        <a href="index.html#contact" class="mt-auto inline-block bg-om-yellow text-om-black px-4 py-2 rounded font-semibold hover:bg-white hover:text-om-yellow border-2 border-om-yellow hover:border-om-yellow transition text-center">Enquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-om-yellow py-6 mt-auto border-t border-om-yellow">
+        <div class="container mx-auto text-center">
+            <!-- Placeholder for logo image, ensure correct path or use a placeholder if not available -->
+            <img src="https://placehold.co/48x48/2C3E50/FFD700?text=LOGO" alt="Om Server Logo" class="h-12 w-12 mx-auto mb-2 rounded-full">
+            <p class="text-om-black">&copy; 2025 Om Server. All rights reserved.</p>
+            <p class="mt-2 text-sm text-om-black">Empowering Education Through Technology</p>
+        </div>
+    </footer>
+</body>
+</html>
